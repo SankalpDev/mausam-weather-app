@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mausam | Real-Time Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌤️ Mausam</h1>
+    <div class="weather-visual-container">
+      <img id="weatherIcon" src="" alt="Weather condition" class="weather-visual">
+    </div>
+    <form id="weatherForm">
+        <label for="cityInput" class="sr-only">City Name</label>
+        <input type="text" id="cityInput" placeholder="Enter city name" required />
+        <button type="submit">Get Weather</button>
+    </form>
+    <div id="loader" class="loader" style="display: none;"></div>
+    <div class="weather-info">
+      <p id="cityName"></p>
+      <p id="temperature"></p>
+      <p id="humidity"></p>
+      <p id="wind"></p>
+      <p id="clouds"></p>
+    </div>
+    <p id="errorMessage" class="error-message"></p>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
